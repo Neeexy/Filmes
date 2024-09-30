@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema Andrade-Twister(1996)</title>
+    <title>Cinema Andrade - Twister (1996)</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1>Cinema Andrade</h1>
+        <a href="https://andradecinema.netlify.app/">
+            <h1>Cinema Andrade</h1>
+        </a>
     </header>
 
     <main>
         <div class="plyr__video-wrapper">
-            <video preload="none" poster="poster_filme1.jpg" width="1280" height="720" controls>
+            <video preload="none" poster="poster_filme1.jpg" controls>
                 <source src="http://topfilmes.biz/direct/mf2/2499/2f7ef41ba9b6709086b160afb9b16bd7/hd" type="video/mp4" size="720">
             </video>
         </div>
     </main>
+
+    <script src="../js/plyr.js"></script>
+    <script>
+    const player = new Plyr('video');
+    </script>
 </body>
 </html>
