@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Andrade-Twister(2024)</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="css/logo.png" type="image/x-icon">
-
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../css/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -18,14 +19,11 @@
 
     <main>
         <div class="plyr__video-wrapper">
-            <video preload="none" poster="https://i.assistir.app/t/p/w342/6RpWnpEL8sXnZgzhEmnT2SLhHL7.jpg" width="1280" height="720" controls>
-                <source src="//topfilmes.biz/direct/mf2/2499/27d594b72645b4b35e94b40cbe3f650b/hd" type="video/mp4" size="720">
-            </video>
+            <video class="video-js vjs-custom-theme " data-setup="{}"  loop controls>
+                <source src="//topfilmes.biz/direct/mf2/2499/27d594b72645b4b35e94b40cbe3f650b/hd" type="video/mp4" />
+        </video>
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
         </div>
     </main>
-    <script src="../js/plyr.js"></script>
-    <script>
-    const player = new Plyr('video');
-    </script>
 </body>
 </html>

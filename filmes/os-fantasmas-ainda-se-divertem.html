@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema Andrade-Os-fantasmas-ainda-se-divertem</title>
+    <title>Cinema Andrade-Os Fantasmas Ainda Se Divertem</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="..css/logo.png" type="image/x-icon">
-
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/city/index.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../css/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <a href="https://andradecinema.netlify.app/">
             <h1>Cinema Andrade</h1>
-            <h3>Os Fantasmas Ainda <br> se Divertem</h3>
+            <h3>Os Fantasmas Ainda Se Divertem</h3>
         </a>
     </header>
 
     <main>
         <div class="plyr__video-wrapper">
-            <video preload="none" poster="https://i.assistir.app/t/p/w342/9iUSUZj9vaUPZjyCkgaHiemWCOI.jpg" width="1280" height="720" controls>
-                <source src="//topfilmes.biz/direct/mf2/2507/3c166948394afe73bdd9ffd4c6bbc0a4/hd" type="video/mp4" size="720">
-            </video>
+            <video class="video-js vjs-custom-theme " data-setup="{}"  loop controls>
+                <source src="//topfilmes.biz/direct/mf2/2507/3c166948394afe73bdd9ffd4c6bbc0a4/hd" type="video/mp4" />
+        </video>
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
         </div>
     </main>
-    <script src="../js/plyr.js"></script>
-    <script>
-    const player = new Plyr('video');
-    </script>
 </body>
 </html>
